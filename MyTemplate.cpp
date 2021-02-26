@@ -48,6 +48,7 @@
 		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
 		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
 		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K);
+		#define CutInHalf(C,F,x,y) y<x> F(C.begin() + C.size()/2 + 1, C.end()); C.resize(C.size()/2)
 		#define revrs(C) reverse(C.begin(, C.end()))
 		
 		// Scan and print containers
@@ -55,7 +56,7 @@
 		#define get(C,a) for(int i=0; i<a; i++) cin>>C[i]
 		#define getVector(C) for(int i=0; i<C.size(); i++) cin>>C[i]
 		#define getDeque(C) for(int i=0; i<C.size(); i++) cin>>C[i]
-		#define getSet(C, a, token) for(int i=0; i<a; i++) { cin>>token; C.insert(token) }
+		#define getSet(C, a, token) for(int i=0; i<a-1; i++) { cin>>token; C.insert(token); } cin>>token; C.insert(token)
 		#define print(C,a) for(int i=0; i<a; i++) cout<<C[i]<<' '
 		#define printVector(C) for(int i=0; i<C.size(); i++) cout<<C[i]<<' '
 		#define printSet(C,x) for (set<x>::iterator it = C.begin(); it!= C.end(); ++it) cout<<*it<<' '
