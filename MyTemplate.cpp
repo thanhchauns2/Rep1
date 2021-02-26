@@ -21,6 +21,7 @@
 	#define cint cpp_int
 	#define pq priority_queue
 	#define reverse_pq priority_queue<int, vector<int>, greater<int> >
+	#define Begin() int N; cin>>N; while(N--)
 	
 	//Commands
 	
@@ -41,6 +42,7 @@
 		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
 		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
 		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K);
+		#define revrs(C) reverse(C.begin(, C.end()))
 		
 		// Scan and print containers
 		
@@ -86,10 +88,3 @@ using namespace std;
 // using boost::multiprecision::cpp_dec_float_50;
 
 //===================== Your code starts HERE =====================
-
-int main()
-{
-	int F[3] = {3,4,5};
-	vector<int> C(F, F+3);
-	print(F,3);
-}
