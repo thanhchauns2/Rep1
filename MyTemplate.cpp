@@ -69,6 +69,8 @@ using namespace std;
 // using namespace boost::multiprecision;
 // using boost::multiprecision::cpp_dec_float_50;
 
+//===================== Your code starts HERE =====================
+
 int main()
 {
 	int F[3] = {3,4,5};
