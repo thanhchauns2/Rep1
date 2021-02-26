@@ -34,6 +34,9 @@
 		
 		// Customize containers
 		
+		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
+		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
+		
 		// Scan and print containers
 		
 		#define get(C,a) for(int i=0; i<a; i++) cin>>C[i]
