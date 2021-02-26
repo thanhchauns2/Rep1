@@ -60,6 +60,7 @@
 	// Containers
 	
 	#define um(C,x,y) unordered_map<x,y> C
+	#define m(C,x,y) map<x,y> C
 	
 	// System
 	
