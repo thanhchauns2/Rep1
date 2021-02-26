@@ -14,17 +14,21 @@
 	// Typedefs
 	
 	#define ll long long
+	#define ull unsigned long long
 	#define pb push_back
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
 	#define pq priority_queue
 	#define reverse_pq priority_queue<int, vector<int>, greater<int> >
-	#define FOR(i,a,b) for (int i=a; i<=b; i++)
-	#define FORD(i,a,b) for (int i=a; i>=b; i--)
-	#define FORA(x,C) for (auto x:C)
 	
 	//Commands
+	
+		// Loops
+		
+		#define FOR(i,a,b) for (int i=a; i<=b; i++)
+		#define FORD(i,a,b) for (int i=a; i>=b; i--)
+		#define FORA(x,C) for (auto x:C)
 		
 		// Clear containers
 		
@@ -36,6 +40,7 @@
 		
 		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
 		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
+		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K);
 		
 		// Scan and print containers
 		
@@ -66,6 +71,7 @@
 	#define um(C,x,y) unordered_map<x,y> C
 	#define m(C,x,y) map<x,y> C
 	#define p(C,x,y) pair<x,y> C
+	#define us(C,x) unordered_set<x> C
 	#define vec2(C,x,y,token) vector<vector<token> > C(x, vector<token> (y))
 	
 	// System
