@@ -35,7 +35,7 @@
 		
 		#define maxOf(C) max_element(C.begin(), C.end()) - C.begin()
 		#define minOf(C) min_element(C.begin(), C.end()) - C.begin()
-		#define ite(y,x) y<x>::iterator
+		#define ite(y,x,it) y<x>::iterator it
 		
 		// Clear containers
 		
@@ -100,4 +100,6 @@ int main()
 	int F[3] = {3,4,5};
 	vector<int> C(F, F+3);
 	print(F,3);
+	ite(vector,int,it);
+	// vector<int>::iterator it;
 }
