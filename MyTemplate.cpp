@@ -19,8 +19,8 @@
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
-	#define pq priority_queue
-	#define reverse_pq priority_queue<int, vector<int>, greater<int> >
+	#define pq(x) priority_queue<x>
+	#define reverse_pq(x) priority_queue<x, vector<x>, greater<x> >
 	#define Begin() int N; cin>>N; while(N--)
 	
 	//Commands
