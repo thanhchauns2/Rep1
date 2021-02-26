@@ -63,6 +63,7 @@
 	#define um(C,x,y) unordered_map<x,y> C
 	#define m(C,x,y) map<x,y> C
 	#define p(C,x,y) pair<x,y> C
+	#define vec2(C,x,y,token) vector<vector<token> > C(x, vector<token> (y))
 	
 	// System
 	
