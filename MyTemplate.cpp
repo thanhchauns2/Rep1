@@ -18,8 +18,8 @@
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
-	#define priority_queue pq
-	#define priority_queue<int, vector<int>, greater<int> > reverse_pq
+	#define pq priority_queue
+	#define reverse_pq priority_queue<int, vector<int>, greater<int> >
 	#define FOR(i,a,b) for (int i=a; i<=b; i++)
 	#define FORD(i,a,b) for (int i=a; i>=b; i--)
 	
@@ -61,6 +61,7 @@
 	
 	#define um(C,x,y) unordered_map<x,y> C
 	#define m(C,x,y) map<x,y> C
+	#define p(C,x,y) pair<x,y> C
 	
 	// System
 	
