@@ -1,3 +1,7 @@
+// By Nguyen Thanh Chau
+// a.k.a Linh's servant - Ken
+// En Taro Adun! - TemplarAssasin a.k.a Zeratul
+
 // Libraries
 
 #include <bits/stdc++.h>
