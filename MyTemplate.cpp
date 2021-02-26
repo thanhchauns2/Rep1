@@ -19,8 +19,6 @@
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
-	#define pq(x) priority_queue<x>
-	#define reverse_pq(x) priority_queue<x, vector<x>, greater<x> >
 	#define Begin() int N; cin>>N; while(N--)
 	
 	//Commands
@@ -82,6 +80,8 @@
 	#define p(C,x,y) pair<x,y> C
 	#define us(C,x) unordered_set<x> C
 	#define vec2(C,x,y,token) vector<vector<token> > C(x, vector<token> (y))
+	#define pq(x) priority_queue<x>
+	#define reverse_pq(x) priority_queue<x, vector<x>, greater<x> >
 	
 	// System
 	
