@@ -1,4 +1,4 @@
-// By Nguyen Thanh Chau
+// Designed by Nguyen Thanh Chau
 // a.k.a Linh's servant - Ken
 // En Taro Adun! - TemplarAssasin a.k.a Zeratul
 
@@ -30,6 +30,12 @@
 		#define FOR(i,a,b) for (int i=a; i<=b; i++)
 		#define FORD(i,a,b) for (int i=a; i>=b; i--)
 		#define FORA(x,C) for (auto x:C)
+		
+		// Get values
+		
+		#define maxOf(C) max_element(C.begin(), C.end()) - C.begin()
+		#define minOf(C) min_element(C.begin(), C.end()) - C.begin()
+		#define ite(y,x) y<x>::iterator
 		
 		// Clear containers
 		
@@ -88,3 +94,10 @@ using namespace std;
 // using boost::multiprecision::cpp_dec_float_50;
 
 //===================== Your code starts HERE =====================
+
+int main()
+{
+	int F[3] = {3,4,5};
+	vector<int> C(F, F+3);
+	print(F,3);
+}
