@@ -20,6 +20,8 @@
 	#define cint cpp_int
 	#define priority_queue pq
 	#define priority_queue<int, vector<int>, greater<int> > reverse_pq
+	#define FOR(i,a,b) for (int i=a; i<=b; i++)
+	#define FORD(i,a,b) for (int i=a; i>=b; i--)
 	
 	//Commands
 		
