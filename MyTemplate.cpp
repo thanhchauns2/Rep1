@@ -22,6 +22,7 @@
 	#define reverse_pq priority_queue<int, vector<int>, greater<int> >
 	#define FOR(i,a,b) for (int i=a; i<=b; i++)
 	#define FORD(i,a,b) for (int i=a; i>=b; i--)
+	#define FORA(x,C) for (auto x:C)
 	
 	//Commands
 		
@@ -66,6 +67,7 @@
 	// System
 	
 	#define faster() ios_base::sync_with_stdin(false); cin.tie(0); cout.tie(0);
+	#define pause() system("pause");
 
 // Namespaces
 
