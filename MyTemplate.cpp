@@ -43,6 +43,9 @@
 		
 		// Customize containers
 		
+		#define SORT(C) sort(C.begin(), C.end())
+		#define SORTD(C,x) sort(C.begin(), C.end(), greater<x>)
+		#define SORTC(C,check) sort(C.begin(), C.end, check)
 		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
 		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
 		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K);
