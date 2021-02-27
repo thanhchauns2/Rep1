@@ -103,11 +103,12 @@ ll X;
 
 struct ele
 {
-	ll a,b;
+	ll a,b,c;
 };
 
 bool check(ele i, ele j)
 {
+	if (i.b == j.b) return i.c < j.c;
 	return (i.b < j.b);
 }
 
@@ -123,6 +124,7 @@ int main()
 		{
 			cin>>C[i].a;
 			C[i].b = abs(C[i].a-X);
+			C[i].c = i;
 		}
 		SORTC(C,check);
 		FOR(i,0,a-1)
