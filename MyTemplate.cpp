@@ -28,6 +28,11 @@
 		#define FOR(i,a,b) for (int i=a; i<=b; i++)
 		#define FORD(i,a,b) for (int i=a; i>=b; i--)
 		#define FORA(x,C) for (auto x:C)
+		#define WHILE(x,y) while(cin>>x>>y)
+		#define WHILEF(x,y,f) while(f>>x>>y)
+		#define WHILE2(x) while(cin>>x)
+		#define WHILEGL(a) while(getline(cin,a))
+		#define WHILEGLF(a,f) while(getline(f,a))
 		
 		// Get values
 		
@@ -48,7 +53,7 @@
 		#define SORTC(C,check) sort(C.begin(), C.end(), check)
 		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
 		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
-		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K);
+		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K.begin());
 		#define CutInHalf(C,F,x,y) y<x> F(C.begin() + C.size()/2 + 1, C.end()); C.resize(C.size()/2)
 		#define revrs(C) reverse(C.begin(, C.end()))
 		
