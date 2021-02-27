@@ -20,7 +20,8 @@
 	#define cl(C) C.clear()
 	#define cint cpp_int
 	#define Begin() int N; cin>>N; while(N--)
-	
+	#define all(C) C.begin(), C.end()
+
 	//Commands
 	
 		// Loops
