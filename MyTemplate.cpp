@@ -77,7 +77,7 @@
 		#define toQueue(C,x) queue<x> (C.begin(), C.end())
 		#define toDeque(C,x) deque<x> (C.begin(), C.end())
 		#define toList(C,x) list<x> (C.begin(), C.end())
-		#define toMultiset(C,x) multiset(C.begin(), C.end())
+		#define toMultiset(C,x) multiset<x> (C.begin(), C.end())
 		
 		// Iterators
 		
