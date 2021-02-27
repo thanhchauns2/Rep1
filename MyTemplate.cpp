@@ -20,7 +20,7 @@
 	#define cl(C) C.clear()
 	#define cint cpp_int
 	#define all(C) C.begin(), C.end()
-	#define Begin() int N; cin>>N; while(N--)
+	#define Begin() int N; cin>>N; cin.ignore(); while(N--)
 	
 	//Commands
 	
@@ -117,5 +117,6 @@ int main()
 	faster();
 	Begin()
 	{
+		
 	}
 }
