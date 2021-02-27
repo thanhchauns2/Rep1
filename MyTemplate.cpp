@@ -91,6 +91,7 @@
 	#define p(x,y) pair<x,y> 
 	#define us(x) unordered_set<x> 
 	#define vec(x) vector<x> 
+	#define deq(x) deque<x> 
 	#define vec2(C,x,y,token) vector<vector<token> > C(x, vector<token> (y))
 	#define pq(x) priority_queue<x>
 	#define reverse_pq(x) priority_queue<x, vector<x>, greater<x> >
