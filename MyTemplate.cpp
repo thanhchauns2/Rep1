@@ -44,7 +44,7 @@
 		
 		#define reset(C) memset(C,0,sizeof(C))
 		#define clearQueue(queue, x) queue = queue<x> ()
-		#define fillVector(C,a) fill(C.begin(), C.end(), a)
+		#define Fill(C,a) fill(C.begin(), C.end(), a)
 		
 		// Customize containers
 		
