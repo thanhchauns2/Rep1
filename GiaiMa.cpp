@@ -1,4 +1,4 @@
-// By Nguyen Thanh Chau
+// Designed by Nguyen Thanh Chau
 // a.k.a Linh's servant - Ken
 // En Taro Adun! - TemplarAssasin a.k.a Zeratul
 
@@ -19,8 +19,6 @@
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
-	#define pq priority_queue
-	#define reverse_pq priority_queue<int, vector<int>, greater<int> >
 	#define Begin() int N; cin>>N; while(N--)
 	
 	//Commands
@@ -31,6 +29,12 @@
 		#define FORD(i,a,b) for (int i=a; i>=b; i--)
 		#define FORA(x,C) for (auto x:C)
 		
+		// Get values
+		
+		#define maxOf(C) max_element(C.begin(), C.end()) - C.begin()
+		#define minOf(C) min_element(C.begin(), C.end()) - C.begin()
+		#define ite(y,x,it) y<x>::iterator it
+		
 		// Clear containers
 		
 		#define reset(C) memset(C,0,sizeof(C))
@@ -39,9 +43,12 @@
 		
 		// Customize containers
 		
+		#define SORT(C) sort(C.begin(), C.end())
+		#define SORTD(C,x) sort(C.begin(), C.end(), greater<x>)
 		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
 		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
 		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K);
+		#define CutInHalf(C,F,x,y) y<x> F(C.begin() + C.size()/2 + 1, C.end()); C.resize(C.size()/2)
 		#define revrs(C) reverse(C.begin(, C.end()))
 		
 		// Scan and print containers
@@ -49,7 +56,7 @@
 		#define get(C,a) for(int i=0; i<a; i++) cin>>C[i]
 		#define getVector(C) for(int i=0; i<C.size(); i++) cin>>C[i]
 		#define getDeque(C) for(int i=0; i<C.size(); i++) cin>>C[i]
-		#define getSet(C, a, token) for(int i=0; i<a; i++) { cin>>token; C.insert(token) }
+		#define getSet(C, a, token) for(int i=0; i<a-1; i++) { cin>>token; C.insert(token); } cin>>token; C.insert(token)
 		#define print(C,a) for(int i=0; i<a; i++) cout<<C[i]<<' '
 		#define printVector(C) for(int i=0; i<C.size(); i++) cout<<C[i]<<' '
 		#define printSet(C,x) for (set<x>::iterator it = C.begin(); it!= C.end(); ++it) cout<<*it<<' '
@@ -75,6 +82,8 @@
 	#define p(C,x,y) pair<x,y> C
 	#define us(C,x) unordered_set<x> C
 	#define vec2(C,x,y,token) vector<vector<token> > C(x, vector<token> (y))
+	#define pq(x) priority_queue<x>
+	#define reverse_pq(x) priority_queue<x, vector<x>, greater<x> >
 	
 	// System
 	
@@ -91,42 +100,9 @@ using namespace std;
 
 int main()
 {
-	Begin()
-	{
-		string a;
-		cin>>a;
-		int k = a.length();
-		if (a[0] == '0')
-		{
-			cout<<0<<endl;
-			continue;
-		}
-		if (k == 1)
-		{
-			cout<<1<<endl;
-			continue;
-		}
-		ll C[k+1];
-		reset(C);
-		C[0] = 1;
-		C[1] = 1;
-		FOR(i,2,k)
-		{
-			if (a[i-1] == '0')
-			{
-				if (a[i-2] == '0' || a[i-2] > '2') 
-				{
-					C[k] = 0;
-					break;
-				}
-				else C[i] = C[i-2];
-			}
-			else if (a[i-2] == '1' || a[i-2] == '2' && a[i-1] <= '6' ) 
-			{
-				C[i] = C[i-1] + C[i-2];
-			}
-			else C[i] = C[i-1];
-		}
-		cout<<C[k]<<endl;
-	}
+	int F[3] = {3,4,5};
+	vector<int> C(F, F+3);
+	print(F,3);
+	ite(vector,int,it);
+	// vector<int>::iterator it;
 }
