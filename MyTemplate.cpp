@@ -48,6 +48,7 @@
 		
 		#define reset(C) memset(C,0,sizeof(C))
 		#define clearQueue(C, x) C = queue<x> ()
+		#define clearStack(C, x) C = stack<x> ()
 		#define Fill(C,a) fill(C.begin(), C.end(), a)
 		
 		// Customize containers
