@@ -19,6 +19,7 @@
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
+	#define all(C) C.begin(), C.end()
 	#define Begin() int N; cin>>N; while(N--)
 	
 	//Commands
