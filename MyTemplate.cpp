@@ -16,6 +16,7 @@
 	#define ll long long
 	#define ull unsigned long long
 	#define pb push_back
+	#define pf push_front
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
