@@ -20,8 +20,7 @@
 	#define cl(C) C.clear()
 	#define cint cpp_int
 	#define Begin() int N; cin>>N; while(N--)
-	#define all(C) C.begin(), C.end()
-
+	
 	//Commands
 	
 		// Loops
@@ -55,6 +54,7 @@
 		#define tlw(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = tolower(C[i])
 		#define tup(C) for(int i=0; i<(sizeof(C)/sizeof(C[0])); i++) C[i] = toupper(C[i])
 		#define Merge(C,F,K) merge(C.begin(), C.end(), F.begin(), F.end(), K.begin());
+		#define Unique(C) C.erase(unique(C.begin(), C.end()), C.end())
 		#define CutInHalf(C,F,x,y) y<x> F(C.begin() + C.size()/2 + 1, C.end()); C.resize(C.size()/2)
 		#define revrs(C) reverse(C.begin(, C.end()))
 		
