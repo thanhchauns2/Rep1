@@ -30,7 +30,7 @@
 		#define FORA(x,C) for (auto x:C)
 		#define WHILE(x,y) while(cin>>x>>y)
 		#define WHILEF(x,y,f) while(f>>x>>y)
-		#define WHILE(x) while(cin>>x)
+		#define WHILE2(x) while(cin>>x)
 		#define WHILEGL(a) while(getline(cin,a))
 		#define WHILEGLF(a,f) while(getline(f,a))
 		
