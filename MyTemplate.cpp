@@ -99,11 +99,15 @@ using namespace std;
 
 //===================== Your code starts HERE =====================
 
+//struct ele
+//{
+//	
+//};
+
 int main()
 {
-	int F[3] = {3,4,5};
-	vector<int> C(F, F+3);
-	print(F,3);
-	ite(vector,int,it);
-	// vector<int>::iterator it;
+	faster();
+	Begin()
+	{
+	}
 }
