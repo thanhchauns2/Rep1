@@ -21,6 +21,7 @@
 	#define cint cpp_int
 	#define all(C) C.begin(), C.end()
 	#define Begin() int N; cin>>N; cin.ignore(); while(N--)
+	#define god uvuvwevwevwe onyetenyevwe ugwemubwem ossas
 	
 	//Commands
 	
