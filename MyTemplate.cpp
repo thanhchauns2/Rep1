@@ -89,6 +89,7 @@
 	#define m(C,x,y) map<x,y> C
 	#define p(C,x,y) pair<x,y> C
 	#define us(C,x) unordered_set<x> C
+	#define vec(C,x) vector<x> C
 	#define vec2(C,x,y,token) vector<vector<token> > C(x, vector<token> (y))
 	#define pq(x) priority_queue<x>
 	#define reverse_pq(x) priority_queue<x, vector<x>, greater<x> >
