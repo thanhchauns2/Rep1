@@ -16,14 +16,11 @@
 	#define ll long long
 	#define ull unsigned long long
 	#define pb push_back
-	#define ppb pop_back
-	#define pf push_front
 	#define eb emplace_back
 	#define cl(C) C.clear()
 	#define cint cpp_int
 	#define all(C) C.begin(), C.end()
 	#define Begin() int N; cin>>N; cin.ignore(); while(N--)
-	#define god uvuvwevwevwe onyetenyevwe ugwemubwem ossas
 	
 	//Commands
 	
@@ -48,7 +45,6 @@
 		
 		#define reset(C) memset(C,0,sizeof(C))
 		#define clearQueue(C, x) C = queue<x> ()
-		#define clearStack(C, x) C = stack<x> ()
 		#define Fill(C,a) fill(C.begin(), C.end(), a)
 		
 		// Customize containers
@@ -66,7 +62,9 @@
 		// Scan and print containers
 		
 		#define get(C,a) for(int i=0; i<a; i++) cin>>C[i]
+		#define get2(C,a,b) for(int i=0; i<a; i++) for (int j=0; j<b; j++) cin>>C[i][j]
 		#define getVector(C) for(int i=0; i<C.size(); i++) cin>>C[i]
+		#define getVector2(C) for(int i=0; i<C.size(); i++) for (int j=0; j<C[i].size(); j++) cin>>C[i][j]
 		#define getDeque(C) for(int i=0; i<C.size(); i++) cin>>C[i]
 		#define getSet(C, a, token) for(int i=0; i<a-1; i++) { cin>>token; C.insert(token); } cin>>token; C.insert(token)
 		#define print(C,a) for(int i=0; i<a; i++) cout<<C[i]<<' '
@@ -94,7 +92,6 @@
 	#define p(x,y) pair<x,y> 
 	#define us(x) unordered_set<x> 
 	#define vec(x) vector<x> 
-	#define deq(x) deque<x> 
 	#define vec2(C,x,y,token) vector<vector<token> > C(x, vector<token> (y))
 	#define pq(x) priority_queue<x>
 	#define reverse_pq(x) priority_queue<x, vector<x>, greater<x> >
