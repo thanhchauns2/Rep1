@@ -28,11 +28,6 @@
 		#define FOR(i,a,b) for (int i=a; i<=b; i++)
 		#define FORD(i,a,b) for (int i=a; i>=b; i--)
 		#define FORA(x,C) for (auto x:C)
-		#define WHILE(x,y) while(cin>>x>>y)
-		#define WHILEF(x,y,f) while(f>>x>>y)
-		#define WHILE2(x) while(cin>>x)
-		#define WHILEGL(a) while(getline(cin,a))
-		#define WHILEGLF(a,f) while(getline(f,a))
 		
 		// Get values
 		
@@ -104,15 +99,38 @@ using namespace std;
 
 //===================== Your code starts HERE =====================
 
-//struct ele
-//{
-//	
-//};
+ll X;
+
+struct ele
+{
+	ll a,b,c;
+};
+
+bool check(ele i, ele j)
+{
+	if (i.b == j.b) return i.c < j.c;
+	return (i.b < j.b);
+}
 
 int main()
 {
 	faster();
 	Begin()
 	{
+		ll a;
+		cin>>a>>X;
+		vector<ele> C(a);
+		FOR(i,0,a-1) 
+		{
+			cin>>C[i].a;
+			C[i].b = abs(C[i].a-X);
+			C[i].c = i;
+		}
+		SORTC(C,check);
+		FOR(i,0,a-1)
+		{
+			cout<<C[i].a<<' ';
+		}
+		cout<<endl;
 	}
 }
