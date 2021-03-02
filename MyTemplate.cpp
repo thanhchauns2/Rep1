@@ -108,6 +108,13 @@
 
 using namespace std;
 // using namespace __gnu_pbds;
+// using namespace __gnu_cxx;
+// using namespace __gnu_debug;
+// using namespace __gnu_internal; //	GNU implemenation details, not for public use or export. Used only when anonymous namespaces cannot be substituted
+// using namespace __gnu_parallel; //	GNU parallel code for public use
+// using namespace __gnu_pbds; //	GNU extensions for policy-based data structures for public use
+// using namespace __gnu_profile; //	GNU profile code for public use
+// using namespace __gnu_sequential;
 // using namespace boost::multiprecision;
 // using boost::multiprecision::cpp_dec_float_50;
 
