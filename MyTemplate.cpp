@@ -7,12 +7,15 @@
 #include <bits/stdc++.h>
 // #include <boost/multiprecision/cpp_int.hpp>
 // #include <boost/math/constants/constants.hpp>
+// #include <ext/pb_ds/assoc_container.hpp>
+// #include <ext/pb_ds/trie_policy.hpp>
 // #include <boost/cstdint.hpp>
 
 // Defines
 	
 	// Typedefs
 	
+// 	#define ll cpp_int
 	#define ll long long
 	#define ull unsigned long long
 	#define pb push_back
@@ -104,6 +107,7 @@
 // Namespaces
 
 using namespace std;
+// using namespace __gnu_pbds;
 // using namespace boost::multiprecision;
 // using boost::multiprecision::cpp_dec_float_50;
 
