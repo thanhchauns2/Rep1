@@ -30,6 +30,7 @@
 		// Loops
 		
 		#define FOR(i,a,b) for (int i=a; i<=b; i++)
+		#define FOR2(i,a,b) for (ll i=a; i<=b; ++i)
 		#define FORD(i,a,b) for (int i=a; i>=b; i--)
 		#define FORA(x,C) for (auto x:C)
 		#define WHILE(x,y) while(cin>>x>>y)
