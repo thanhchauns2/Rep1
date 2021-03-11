@@ -138,7 +138,8 @@ int main()
 		
 	}
 }
-/*   ________
+/*   Geomatric art by Daniel yuan
+     ________
     /        \
    / /      \ \
   / /        \ \
