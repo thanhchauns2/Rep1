@@ -1,5 +1,5 @@
 // Designed by Nguyen Thanh Chau
-// a.k.a Linh's servant - Ken
+// a.k.a Paperback Collector
 // En Taro Adun! - TemplarAssasin a.k.a Zeratul
 
 //                #####                #####
