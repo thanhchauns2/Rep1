@@ -47,6 +47,8 @@
 	#define pb push_back
 	#define eb emplace_back
 	#define cl(C) C.clear()
+	#define f first
+	#define s second
 	#define cint cpp_int
 	#define all(C) C.begin(), C.end()
 	#define Begin() int N; cin>>N; cin.ignore(); while(N--)
@@ -167,8 +169,6 @@ int main()
 //  Geometric art by Daniel yuan
 //  Redraw by Nguyen Thanh Chau
 /*   
-
-
                 ________
                /        \
               / /      \ \
